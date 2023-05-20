@@ -1,0 +1,9 @@
+IN,"What is your name?"
+LOAD_CELL,A9
+SWAP
+CONCAT
+LOAD_CELL,B9
+CONCAT
+OUT
+HALT
+"Hello, ",!

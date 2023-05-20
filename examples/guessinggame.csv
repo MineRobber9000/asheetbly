@@ -1,0 +1,21 @@
+LOAD_CELL,C1,"Time to play a guessing game!","Pick a number between 1 and 100.","Correct! Good job!","Higher, please.","Lower, please."
+OUT
+RANDINT,1,100
+STORE_CELL,ALL41,haha funny MHA reference
+LOAD_CELL,D1
+OUT
+IN,"?",line 7
+COMPARE,ALL41
+JUMP_IF,A13
+LT,ALL41
+JUMP_IF,A16
+JUMP,A19,GT is implied
+LOAD_CELL,E1,A13 for correct answer
+OUT
+HALT
+LOAD_CELL,F1,A16 for too low
+OUT
+JUMP,A7,do it again
+LOAD_CELL,G1,A19 for too high
+OUT
+JUMP,A7,do it again
